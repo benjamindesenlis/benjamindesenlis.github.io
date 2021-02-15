@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Bow";
+  src: url(./Fonts/Bow.ttf);
+}
+
+@font-face {
+  font-family: "Oxa";
+  src: url(./Fonts/Oxa.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  border: rgba(32, 37, 42, 0.842) solid 4px;
+  background: none;
+  color: rgba(32, 37, 42, 0.842);
+  font-size: 2.3rem;
+  margin-top: 100px;
+  margin: 0 auto;
+  font-family: Oxa;
+  font-weight: 700;
+  transition: 0.6s ease;
+}
+
+button:hover {
+  color: white;
+  border: white solid 5px;
+  width: 310px;
+  cursor: pointer;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: url(./images/abstraction-5270189_1920.jpg) center/cover fixed;
+  /* border-bottom: grey solid 2px; */
+}
+
+.headertext {
+  margin: 0 auto;
+  display: grid;
+  transition: 2s;
+}
+
+.headertext:before {
+  bottom: 20px;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 220px;
+  font-family: "Bow";
+  color: rgba(32, 37, 42, 0.842);
+  font-weight: 100;
+  letter-spacing: 5px;
+  /* text-shadow: rgba(255, 255, 255, 0.856) 1px -1px; */
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: "Oxa";
+  color: rgba(0, 0, 0, 0.883);
+}
+
+.headertext p {
+  font-family: "Oxa";
+  font-size: 3.8rem;
+  font-weight: 400;
+  color: rgba(32, 37, 42, 0.842);
+  /* text-shadow: rgba(255, 255, 255, 0.787) 1px -1px; */
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+body {
+  height: 9500px;
+  background: rgb(130, 150, 172);
+}
+
+.profil {
+  height: 500px;
+  background: rgba(255, 255, 255, 0.74);
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+}
+
+.profilarea p {
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.competences {
+  height: 350px;
+  color: white;
+  background: rgba(0, 0, 0, 0.699);
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+}
+
+.competences p {
+  font-size: 3rem;
+  padding: 20px;
+  font-family: "bow";
+}
+
+.competences h3 {
+  font-size: 3rem;
+  font-family: "Oxa";
+  font-weight: 300;
+  padding: 50px;
+}
+
+.gridcompetences {
+  height: 550px;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.74);
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  /* margin-bottom: 80px; */
+}
+
+.competences-container {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.competences-container ul {
+  list-style-type: none;
+}
+
+.entetecrea {
+  height: 150px;
+  color: white;
+  background: rgba(0, 0, 0, 0.699);
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.entetecrea h3 {
+  font-size: 3rem;
+  font-family: "bow";
+}
