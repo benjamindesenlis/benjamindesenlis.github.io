@@ -17,32 +17,42 @@
 
 button {
   width: 300px;
-  height: 100px;
-  border-radius: 50px;
-  border: rgba(32, 37, 42, 0.842) solid 4px;
+  height: 90px;
+  border-radius: 30px;
+  border: rgba(94, 130, 145, 0.527) solid 3px;
   background: none;
-  color: rgba(32, 37, 42, 0.842);
-  font-size: 2.3rem;
+  color: rgba(94, 130, 145, 0.527);
+  font-size: 2rem;
   margin-top: 100px;
   margin: 0 auto;
   font-family: Oxa;
   font-weight: 700;
-  transition: 0.6s ease;
+  transition: 0.2s ease;
 }
 
 button:hover {
-  color: white;
-  border: white solid 5px;
+  color: rgb(94, 130, 145);
+  border: rgb(94, 130, 145) solid 3px;
   width: 310px;
   cursor: pointer;
+  height: 80px;
+  border-radius: 40px;
+  background: rgba(206, 240, 255, 0.233);
+}
+
+.barreentete {
+  height: 2px;
+  background: rgba(94, 130, 145, 0.527);
+  width: 87%;
+  margin: 0 auto;
 }
 
 header {
   height: 100vh;
   width: 100%;
   text-align: center;
-  background: url(./images/abstraction-5270189_1920.jpg) center/cover fixed;
-  /* border-bottom: grey solid 2px; */
+  background: url(./images/light-1282314_1920.jpg) center/cover fixed;
+  /* border-bottom: rgba(94, 130, 145, 0.452) solid 3px; */
 }
 
 .headertext {
@@ -59,7 +69,7 @@ h1 {
   font-size: 6rem;
   margin-top: 220px;
   font-family: "Bow";
-  color: rgba(32, 37, 42, 0.842);
+  color: rgba(94, 130, 145, 0.726);
   font-weight: 100;
   letter-spacing: 5px;
   /* text-shadow: rgba(255, 255, 255, 0.856) 1px -1px; */
@@ -71,14 +81,14 @@ h2 {
   margin-top: 80px;
   margin-bottom: 80px;
   font-family: "Oxa";
-  color: rgba(0, 0, 0, 0.883);
+  color: rgba(0, 0, 0, 0.986);
 }
 
 .headertext p {
   font-family: "Oxa";
   font-size: 3.8rem;
   font-weight: 400;
-  color: rgba(32, 37, 42, 0.842);
+  color: rgb(8, 8, 8);
   /* text-shadow: rgba(255, 255, 255, 0.787) 1px -1px; */
   margin-top: 50px;
   margin-bottom: 100px;
@@ -86,29 +96,30 @@ h2 {
 
 body {
   height: 9500px;
-  background: rgb(130, 150, 172);
+  background: rgb(241, 253, 255);
 }
 
 .profil {
-  height: 500px;
+  height: 680px;
   background: rgba(255, 255, 255, 0.74);
   width: 80%;
   margin: 0 auto;
   display: grid;
   text-align: center;
+  font-family: "Oxa";
 }
 
 .profilarea p {
   width: 80%;
   justify-content: center;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .competences {
   height: 350px;
   color: white;
-  background: rgba(0, 0, 0, 0.699);
+  background: rgba(94, 130, 145, 0.699);
   width: 80%;
   margin: 0 auto;
   display: grid;
@@ -116,8 +127,9 @@ body {
 }
 
 .competences p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 20px;
+  letter-spacing: 2px;
   font-family: "bow";
 }
 
@@ -151,16 +163,153 @@ body {
 .entetecrea {
   height: 150px;
   color: white;
-  background: rgba(0, 0, 0, 0.699);
+  background: rgba(94, 130, 145, 0.699);
   width: 80%;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   align-items: center;
   padding: 40px;
+  border-bottom: white solid 1px;
 }
 
 .entetecrea h3 {
   font-size: 3rem;
   font-family: "bow";
+}
+
+.gridcompetences {
+  height: 650px;
+}
+
+.competences-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "c3 c1"
+    "c3 c2";
+  margin: 30px 30px;
+  text-align: left;
+}
+
+.competences-container p {
+  font-size: 1.2rem;
+  font-family: "Oxa";
+}
+
+.competences-container h5 {
+  font-size: 1.3rem;
+  font-family: "Oxa";
+  color: rgba(94, 130, 145, 0.699);
+}
+
+.competences-container h6 {
+  font-size: 1.3rem;
+  font-family: "Oxa";
+  font-weight: 600;
+}
+
+.c3 {
+  grid-area: c3;
+  font-size: 1.4rem;
+}
+.c1 {
+  grid-area: c1;
+  font-family: "Oxa";
+  font-size: 1.3rem;
+}
+
+.c1 ul {
+  line-height: 40px;
+}
+
+.c2 {
+  grid-area: c2;
+  font-family: "Oxa";
+  font-size: 1.3rem;
+}
+
+.c2 ul {
+  line-height: 40px;
+}
+
+.competences-container compet3 {
+  grid-area: "c3";
+  height: 500px;
+  width: 500px;
+}
+
+.competences-container compet1 {
+  grid-area: "c2";
+}
+
+.competences-container compet2 {
+  grid-area: "c2";
+}
+
+.competences-container img {
+  height: 100px;
+  width: 100px;
+}
+
+.gamingcampus {
+  background: url(./images/BGGC.jpg) center/cover;
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: white solid 1px;
+  transition: 0.3s;
+}
+
+.gamingcampus:hover {
+  height: 350px;
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.theresto {
+  background: url(./images/BGRESTO.jpg) center/cover;
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: white solid 1px;
+  transition: 0.3s;
+}
+
+.theresto:hover {
+  height: 350px;
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.run {
+  background: url(./images/BGRUN.jpg) center/cover;
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: white solid 1px;
+  transition: 0.3s;
+}
+
+.run:hover {
+  height: 350px;
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.spaceX {
+  background: url(./images/BGSPACE.jpg) center/cover;
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: white solid 1px;
+  transition: 0.4s;
+}
+
+.spaceX:hover {
+  height: 350px;
+  cursor: pointer;
+  opacity: 80%;
 }
