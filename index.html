@@ -5,125 +5,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Desenlis - Développeur Web et Web mobile</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block">
+                <!-- hidden spacer to center brand on mobile -->
+            </span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                <img src="./images/LOGOBEN.png" width="80px" alt="">
 
-    <header>
-
-        <div class="headertext">
-            <h1>Benjamin Desenlis</h1>
-            <p>Développeur Web et Web mobile</p>
-            <button>Me contacter</button>
-
+            </a>
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" text-body>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-        <div class="headerimg"></div>
-    </header>
-    <div class="barreentete"></div>
-    <main>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#serv" class="nav-link m-2 menu-item">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link m-2 menu-item">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skillspoint" class="nav-link m-2 menu-item">Réalisations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Contact</a>
+                </li>
+        </div>
 
-        <div class="profil">
-            <div class="profilarea">
-                <h2>Qui suis-je ?</h2>
-                <p>Un bordelais en passe de devenir Développeur Web junior, actuellement en formation avec le Campus du
-                    Lac @ Castelnau-de-Medoc, je souhaite faire carrière dans le monde du développement web. Ayez un
-                    passé de graphiste amateur je souhaitais comprendre comment se construisé les sites internets de nos
-                    jours pour pouvoir être en capacité d'en créer moi même de A à Z. <br><br> <br>
-                    Je suis à la recherche d'un stage de 10 semaines pour valider mon titre de développeur à compter de
-                    Juin 2021, si intéressez je vous invite à me contacter via la zone dédiée au bas de la page. <br>
 
-                    <br>Sur ce site, vous pourrez visualisé mes créations dans mon portfolio mais aussi voir mes
-                    compétences
-                    dans le développement web, ainsi que mon CV. <br>
+        </ul>
+        </div>
+    </nav>
 
-                    <br>Bonne visite !
-                </p>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/office-1209640_1920.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__zoomInLeft">N'attendez rien d'autre que la perfection.</h5>
+                    <h2 class="animate__animated animate__fadeInDown">Design, Developpement, Marketing</h2>
+                    <p class="animate__animated animate__zoomInRight">Créations de qualité pour sublimer la réalisation
+                        de vos projets. </p><br>
+                    <!-- <button>Commencer mon projet</button> -->
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/office-932926_1920.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__zoomInLeft">La qualité sur toutes les plateformes</h5>
+                    <h2 class="animate__animated animate__fadeInDown">Des solutions design adaptives</h2>
+                    <p class="animate__animated animate__zoomInRight">L'importance d'avoir vision sur votre projet sur
+                        toute type d'appareils.</p><br>
+                    <!-- <button>En savoir plus</button> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/notebook-1280538_1920.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animate__animated animate__zoomInLeft">Je développe des sites pour booster vos projets.
+                    </h5>
+                    <h2 class="animate__animated animate__fadeInDown">L'importance d'avoir un plan.</h2>
+                    <p class="animate__animated animate__zoomInRight">Créativité connectée, avoir une place dans le
+                        monde digital pour évoluer.</p><br>
+                    <!-- <button><a href="#contactez"> Me contacter</a></button><br> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-                </CV>
+    <div class="services">
+
+        <div class="enteteservices" id="serv">
+            <h5 class="animate__animated animate__slideInDown">Service à la personne en développement et
+                web-design
+            </h5>
+            <h2 class="animate__animated animate__slideInDown">Votre solution pour votre projet numérique</h2><br>
+            <hr style="height: 4px;"><br>
+            <p>J'attache une grande importance pour réaliser le site que vous imaginez au pixel près! Je ferais de mon
+                mieux pour vous conseiller dans la réalisation de votre projet web afin de booster votre compagnie.
+            </p><br>
+        </div>
+
+
+        <div class="services-container">
+            <ul>
+                <li>
+                    <div class="imgServ "><img src="./images/Strategy.png" alt=""
+                            class="animate__animated animate__slideInDown"></div>
+                    <div class="ContentServ">
+                        <h5>Plan et stratégie</h5>
+                        <p>Mettre toutes les armes de notre côté pour un avoir site productif.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgServ"><img src="./images/ruleandpen.png" alt=""
+                            class="animate__animated animate__slideInDown"></div>
+                    <div class="ContentServ">
+                        <h5>UI/UX Design</h5>
+                        <p>Développer votre site pour tout les appareils possibles.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgServ"><img src="./images/192b21525b35531dcc9d0606eac92dcb.png" alt=""
+                            class="animate__animated animate__slideInDown"></div>
+                    <div class="ContentServ">
+                        <h5>Developpement Web</h5>
+                        <p>Développer votre site à la main ou via des CMS</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgServ"><img src="./images/information-technology-based-seo-sem-icon-1.png" alt=""
+                            class="animate__animated animate__slideInDown">
+                    </div>
+                    <div class="ContentServ">
+                        <h5>Optimisation SEO</h5>
+                        <p>Utiliser les outils pour mettre placer votre site dans les premieres recherches.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgServ"><img src="./images/commerce.png" alt=""
+                            class="animate__animated animate__slideInDown"></div>
+                    <div class="ContentServ">
+                        <h5>E-commerce</h5>
+                        <p>Mettre en place un e-commerce pour votre activité. Indispensable en 2021.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgServ"><img src="./images/cloud.png" alt=""
+                            class="animate__animated animate__slideInDown"></div>
+                    <div class="ContentServ">
+                        <h5>Contenu marketing</h5>
+                        <p>Faire les meilleurs choix dans l'illustration de votre site et de votre projet.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="service-button">
+            <button id="skills">Me contacter</button>
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="skills">
+        <div class="skills-container">
+            <div class="skills-entete">
+                <h2>Mes compétences</h2>
+                <p>Ce que j'ai appris en formation et en autodidacte.</p>
+            </div>
+            <div class="skills-devdes">
+                <div class="skills-dev">
+                    <h3>Développement Web</h3><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                            style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                            style="width: 28%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                            style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                            id="skillspoint">MYSQL</div>
+                    </div>
+                </div>
+                <div class="skills-design">
+                    <h3>Graphisme & Web-design</h3><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            style="width: 85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">PHOTOSHOP</div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                            style="width: 55%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">ILLUSTRATOR
+                        </div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            style="width: 65%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">AFTER EFFECT
+                        </div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+                            style="width: 82%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">ADOBE XD</div>
+                    </div><br>
+                    <div class="progress" style="height: 28px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            style="width: 75%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">PREMIERE PRO
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><br>
+        <hr>
+    </div>
+
+    <div class="realisations">
+        <h3>Quelques réalisations & intégrations</h3><br>
+        <hr style="height: 4px;"><br><br>
+        <div class="realisation-container">
+            <div class="resto">
+                <img src="./images/BGCAMPUS.jpg" alt="">
+            </div>
+            <div class="resto">
+                <img src="./images/BGRESTO.jpg" alt="">
+            </div>
+
+            <div class="resto">
+                <img src="./images/BGSPACEX.jpg" alt="">
+            </div>
+        </div>
+        <div class="realisation-container">
+            <div class="resto">
+                <img src="./images/BGRUNN.jpg" alt="">
+            </div>
+            <div class="resto">
+                <img src="./images/BGALLO.jpg" alt="">
+            </div>
+            <div class="resto">
+                <img src="./images/BGCOFFEE.jpg" alt="">
             </div>
         </div>
 
-        <div class="competences">
-            <div class="entetecompet">
-                <h3>Mes compétences</h3><br>
-                <p>Développement Web & Web Design</p>
+    </div>
+
+
+
+    <div class="footer" id="contactez">
+        <div class="footer-container">
+            <div class="apropos">
+                <h3>A propos de moi</h3>
+                <hr style="height: 4px;"><br>
+
+                <div class="reseaux">
+                    <ul>
+                        <img src="./images/LOGOBEN.png" alt="">
+                        <li><i class="fab fa-linkedin"></i></li>
+                        <li><i class="fab fa-gitlab"></i></li>
+                        <li><i class="fab fa-skype"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nouscontacter">
+                <h3>Nous contacter</h3>
+                <hr style="height: 4px;"><br>
+                <ul>
+                    <li><i class="far fa-envelope-open"></i> Benjamindesenlis@gmail.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> 0624195558</li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Mérignac, Gironde - France</li>
+                </ul>
+            </div>
+            <div class="liensrapide">
+                <h3>Liens rapide
+                </h3>
+                <hr style="height: 4px;"><br>
+                <ul>
+                    <li><a>Mes réalisations</a></li>
+                    <li><a>A propos de moi</a></li>
+                    <li><a>Politique RGPD</a></li>
+                    <li><a>Mentions légales</a></li>
+                </ul>
             </div>
         </div>
-
-        <div class="gridcompetences">
-            <div class="competences-container">
-
-
-                <div class="c3">
-                    <h5>Domaine de compétences <br><br> </h5><br>
-                    <ul>
-                        <li>
-                            <h6>GESTION DE PROJET</h6>
-                            <p>Site Vitrine - Charte graphique</p><br><br>
-                        </li>
-                        <li>
-                            <h6>CONCEPTION GRAPHIQUE & WEBDESIGN</h6>
-                            <p>Logo-Template-Carte de visite-Flyers-Publicité</p><br><br>
-                        </li>
-                        <li>
-                            <h6>INTEGRATION HTML/CSS</h6>
-                            <p>HTML-CSS codé à la main.
-                            </p> <br><br>
-                        </li>
-
-                        <li>
-                            <h6>DESIGN RESPONSIVE</h6>
-                            <p>Mobile-first - Conception multi-support</p><br><br>
-                        </li>
-
-                        <li>
-                            <h6>MONTAGE VIDEO</h6>
-                            <p>Creation image/son/effets/encodage</p><br><br>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="c1">
-                    <h5>Compétences de développement <br> </h5><br>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-
-                <div class="c2">
-                    <h5>Compétences en graphisme <br> </h5><br>
-                    <ul>
-                        <li>PHOTOSHOP</li>
-                        <li>ILLUSTRATOR</li>
-                        <li>ADOBE XD</li>
-                        <li>AFTER EFFECTS</li>
-                        <li>PREMIERE PRO</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="entetecrea">
-            <h3>Portfolio</h3>
-
-        </div>
-        <div class="theresto"></div>
-        <div class="gamingcampus"> </div>
-        <div class="run"></div>
-        <div class="spaceX"></div>
-
-    </main>
-
+    </div>
+    <div class="footer2">
+        <p>Benjamin Desenlis © 2021. Tous droits réservés.</p>
+    </div>
 
 </body>
-
 
 </html>
