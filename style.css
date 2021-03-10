@@ -414,14 +414,13 @@ li {
 /**************************/
 #parallax-world-of-ugg .block {
   background: white;
-  padding: 60px;
+  padding: 69px;
   width: 820px;
   margin: 0 auto;
   text-align: justify;
 }
 #parallax-world-of-ugg .block-gray {
   background: #f2f2f2;
-  padding: 60px;
 }
 #parallax-world-of-ugg .section-overlay-mask {
   position: absolute;
@@ -435,6 +434,7 @@ li {
 
 /* Section - Parallax */
 /**************************/
+
 #parallax-world-of-ugg .parallax-one {
   margin-top: -7px;
   padding-top: 300px;
@@ -556,3 +556,5 @@ li {
 .block h3 {
   text-align: center;
 }
+
+/* ********************************************************** */
