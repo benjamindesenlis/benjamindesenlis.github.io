@@ -1,0 +1,284 @@
+.competences-container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.presentation-skills {
+  margin: -35px auto;
+}
+
+.background-skills img {
+  width: 100vw;
+  border-bottom: white solid 1px;
+}
+
+.dev-container h3 {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 52px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 90px;
+  font-size: 2rem;
+}
+
+.dev-container {
+  width: 100%;
+  /* margin-left: 20px; */
+  z-index: -1000;
+}
+
+.dev-container li {
+  position: relative;
+  list-style: none;
+  color: rgb(228, 228, 228);
+  margin-left: 25px;
+  justify-content: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  z-index: -1;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.dev-container ul {
+  margin-top: 10px;
+}
+
+.dev-container li:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000px;
+  z-index: -1;
+}
+
+.dev-container li:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 15px;
+  background-color: rgb(146, 146, 146);
+  border-radius: 1000px;
+  z-index: -1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.dev-container li.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 82%;
+  }
+}
+
+.dev-container li.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 70%;
+  }
+}
+
+.dev-container li.js:after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 40%;
+  }
+}
+
+.dev-container li.jquery:after {
+  animation-name: jquery;
+}
+
+@keyframes jquery {
+  to {
+    width: 50%;
+  }
+}
+
+.dev-container li.php:after {
+  animation-name: php;
+}
+
+@keyframes php {
+  to {
+    width: 10%;
+  }
+}
+
+.dev-container li.wordpress:after {
+  animation-name: wordpress;
+}
+
+@keyframes wordpress {
+  to {
+    width: 50%;
+  }
+}
+
+.graphiste-container h3 {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 52px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 90px;
+  font-size: 2rem;
+}
+
+.graphiste-container {
+  width: 100%;
+  z-index: -1000;
+}
+
+.graphiste-container li {
+  position: relative;
+  list-style: none;
+  color: rgb(228, 228, 228);
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-left: 25px;
+  z-index: -1;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.graphiste-container ul {
+  margin-top: 10px;
+}
+
+.graphiste-container li:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000px;
+  z-index: -1;
+}
+
+.graphiste-container li:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 15px;
+  background-color: rgb(146, 146, 146);
+  border-radius: 1000px;
+  z-index: -1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.graphiste-container li.photoshop:after {
+  animation-name: photoshop;
+}
+
+@keyframes photoshop {
+  to {
+    width: 85%;
+  }
+}
+
+.graphiste-container li.illustrator:after {
+  animation-name: illustrator;
+}
+
+@keyframes illustrator {
+  to {
+    width: 65%;
+  }
+}
+
+.graphiste-container li.xd:after {
+  animation-name: xd;
+}
+
+@keyframes xd {
+  to {
+    width: 60%;
+  }
+}
+
+.graphiste-container li.aftereffect:after {
+  animation-name: aftereffect;
+}
+
+@keyframes aftereffect {
+  to {
+    width: 70%;
+  }
+}
+
+.graphiste-container li.php:after {
+  animation-name: php;
+}
+
+@keyframes php {
+  to {
+    width: 10%;
+  }
+}
+
+.graphiste-container li.wordpress:after {
+  animation-name: wordpress;
+}
+
+@keyframes wordpress {
+  to {
+    width: 50%;
+  }
+}
+
+.services-container h3 {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 52px;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 2rem;
+}
+
+.services-container li {
+  list-style: none;
+  margin-left: 25px;
+  justify-content: center;
+  line-height: 15px;
+  color: rgb(228, 228, 228);
+  font-weight: 500;
+  font-size: 1.2rem;
+  z-index: -1;
+  margin-top: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.services {
+  margin-bottom: 30px;
+  padding: 0 20px 0 20px;
+}

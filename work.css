@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background-work img {
+  width: 100vw;
+  border-bottom: white solid 1px;
+}
+
+.presentation-work {
+  margin-top: -30px;
+  opacity: 100%;
+  color: rgb(224, 224, 224);
+}
+
+.presentation-work h2 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 100;
+}
+
+.presentation-work p {
+  margin-left: 20%;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+
+.presentation-court p {
+  font-size: 0.9rem;
+  color: rgb(172, 172, 172);
+  margin: 0 auto;
+  padding: 20px;
+  z-index: -1;
+  text-align: center;
+}
+
+.projets-container h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 100;
+}
+.nav {
+  z-index: +1;
+}
+#carouselExampleCaptions {
+  z-index: 0;
+}
+
+.carousel-item img {
+  height: 40vh;
+  width: 100%;
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+}
+
+.carousel-caption {
+  text-align: center;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.335);
+  line-height: 5px;
+  font-family: "Bebas Neue", cursive;
+}
+
+/*  */
+.projets2-container {
+  margin-top: 50px;
+}
+
+.itempro {
+  text-align: center;
+}
+
+#buttonprojet a {
+  text-decoration: none;
+  color: rgb(17, 64, 117);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  cursor: pointer;
+}
+
+.itempro button {
+  text-decoration: none;
+  padding: 8px 40px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.itempro p {
+  color: rgb(226, 226, 226);
+  padding: 0 20px;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.projets2-container h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 100;
+}
+
+.projets2-container h4 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 100;
+  margin-top: -20px;
+}
+
+.projets2-container img {
+  margin: 0 auto;
+  width: 100%;
+  z-index: -1;
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+}
+
+@media screen and (min-width: 568px) {
+  .presentation-court p {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .carousel-inner img {
+    height: 65vh;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .projets2 img {
+    height: 55vh;
+  }
+  .itempro p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .presentation-court p {
+    width: 80%;
+  }
+  .carousel-inner img {
+    height: 75vh;
+  }
+  .carousel-caption {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  .projets2 img {
+    height: 65vh;
+  }
+  .itempro p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .presentation-court p {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  .carousel-inner img {
+    height: 85vh;
+  }
+  .carousel-caption {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  .projets2 img {
+    height: 75vh;
+  }
+  .itempro p {
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .presentation-court p {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .carousel-inner img {
+    height: 85vh;
+  }
+  .carousel-caption {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .projets2 img {
+    height: 85vh;
+  }
+  .itempro p {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

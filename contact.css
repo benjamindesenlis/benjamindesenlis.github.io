@@ -1,0 +1,140 @@
+body h2 {
+  font-family: "Bebas Neue", cursive;
+  line-height: 52px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 4rem;
+  margin-top: -28px;
+}
+
+.contact-box {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form {
+  display: grid;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input {
+  margin: 10px;
+  padding: 8px 20px;
+  border-radius: 12px;
+  border: none;
+  width: 50%;
+}
+
+#message {
+  height: 150px;
+}
+
+button {
+  margin-top: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.2rem;
+  padding: 8px 50px;
+  border-radius: 40px;
+  border: none;
+}
+
+p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  padding: 5px 30px;
+  line-height: 26px;
+}
+
+.background-contact img {
+  background-position: center;
+  width: 100vw;
+  border-bottom: white solid 1px;
+}
+
+.bas {
+  margin-bottom: 30px;
+}
+
+.contact-reseau {
+  text-align: right;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 568px) {
+  .entete-contact {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+  .contact-reseau {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+  .contact-box input {
+    width: 50%;
+  }
+  .bas p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .entete-contact {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+  }
+  .contact-reseau {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+  }
+  .contact-box input {
+    width: 40%;
+  }
+  .bas p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .entete-contact {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+  .contact-reseau {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+  .contact-box input {
+    width: 40%;
+  }
+  .bas p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .entete-contact {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  .contact-reseau {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  .contact-box input {
+    width: 30%;
+  }
+  .bas p {
+    font-size: 1.5rem;
+  }
+}

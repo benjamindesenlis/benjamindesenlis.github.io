@@ -1,560 +1,230 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-
 * {
   margin: 0;
   padding: 0;
 }
 
-/************************* NAVBAR **************************/
-
-.navbar-brand {
-  padding: 200px;
-  margin-left: 70px;
+body {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(17, 64, 117);
+  padding: 0;
+  margin: 0 auto;
 }
 
-.navbar {
-  padding: 10px;
-  background: rgb(241, 241, 241);
-  font-weight: 600;
-}
-
-.navbar a {
-  color: black;
-}
-
-.navbar button {
-  color: rgb(212, 219, 103);
-  background-color: rgb(0, 0, 0);
-  border: none;
-  padding: 5px 15px;
-  font-weight: 600;
-}
-
-/************************* CAROUSEL **************************/
-
-.carousel-inner {
-  height: 900px;
-  width: 100%;
-  /* margin-top: 50px; */
-}
-
-.carousel-inner img {
-  height: 900px;
-  align-items: center;
-}
-
-.carousel-caption {
-  margin-bottom: 230px;
-  font-size: 1.9rem;
-  font-weight: 500;
-  background: white;
-  border-radius: 30px;
-  opacity: 60%;
-}
-
-.carousel-caption h2 {
-  font-size: 5rem;
-  margin-bottom: 30px;
-}
-
-.carousel-caption h5 {
-  font-size: 1.5rem;
-  margin-top: 30px;
-}
-
-.carousel-caption p {
+.presentation {
+  margin-top: 200px;
+  /* margin-left: 20px; */
   font-size: 2rem;
 }
 
-.carousel-caption button {
-  border-radius: 19px;
-  border: black solid 1px;
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.presentation h1,
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 52px;
+  color: rgb(255, 255, 255);
+  margin-left: 10%;
 }
 
-/************************* SERVICES **************************/
-
-.services hr {
-  width: 40%;
-  margin: 0 auto;
-  color: rgb(68, 114, 241);
+.presentation p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: rgb(221, 221, 221);
+  margin-top: 10px;
+  margin-left: 100px;
+  font-weight: 300;
 }
 
-.enteteservices {
-  text-align: center;
-  width: 50%;
-  margin: 50px auto;
+.presentation-skills {
+  margin-top: 200px;
+  margin-left: 20px;
+  font-size: 3rem;
 }
 
-.enteteservices h5 {
-  color: rgb(68, 114, 241);
+.presentation-skills h2 {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 52px;
+  color: rgb(255, 255, 255);
 }
 
-.enteteservices h2 {
-  font-weight: 700;
+.presentation-skills p {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 10px;
+  color: rgb(228, 228, 228);
+  font-size: 2.5rem;
+  margin-left: 70px;
+  font-weight: 300;
 }
 
-.enteteservices hr {
-  background-color: rgb(68, 114, 241);
-  width: 100px;
-  margin: 0 auto;
-}
-
-.services-container ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px 20px;
-  grid-template-areas:
-    ". . ."
-    ". . .";
-  width: 60%;
-  margin: 50px auto;
-  list-style-type: none;
-}
-
-.services-container img {
-  height: 70px;
-  width: 70px;
-  margin-right: 20px;
-}
-
-.services-container li {
-  display: flex;
-}
-
-.service-button button {
-  border-radius: 19px;
-  padding: 12px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-weight: 600;
-  margin: 0 auto;
-  display: grid;
-  background: rgb(32, 153, 223);
-  border: none;
-  color: white;
-  margin-bottom: 80px;
-}
-
-/************************* SKILLS **************************/
-
-.skills {
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.skills-devdes {
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.skills-dev {
-  width: 50%;
-  padding: 40px;
-}
-
-.skills-design {
-  width: 50%;
-  padding: 40px;
-}
-
-.skills hr {
-  width: 40%;
-  margin: 0 auto;
-  color: rgb(68, 114, 241);
-}
-
-/************************* REALISATIONS **************************/
-
-.resto {
-  display: flex;
-  overflow: hidden;
-  margin: 0 auto;
-  height: auto;
-  width: 50%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.resto img {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-.resto:hover img {
-  transform: scale(1.2);
-  opacity: 90%;
-  cursor: pointer;
-}
-
-.realisation-container {
-  display: flex;
-}
-
-.realisations {
-  text-align: center;
-  margin-top: 50px;
-  padding: 0 100px;
-}
-
-.realisations hr {
-  width: 5%;
-  margin: 0 auto;
-  color: rgb(68, 114, 241);
-}
-
-#hrrea {
-  width: 40%;
-  color: rgb(0, 110, 255);
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-/************************* FOOTER **************************/
-
-.footer {
-  background: rgba(207, 207, 207, 0.945);
-  color: black;
-  text-decoration: none;
-}
-
-.footer a,
-li {
-  font-weight: 600;
-}
-
-.apropos img {
-  height: 50px;
-  width: auto;
-}
-
-.apropos li {
-  padding: 10px;
-}
-
-.reseaux {
-  justify-content: space-around;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  /* margin-left: 350px;
-  margin-right: 350px; */
-  padding: 10px;
-}
-
-.footer-container h3 {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.footer hr {
-  width: 60px;
-  color: rgb(255, 251, 5);
-  margin: 0 auto;
-}
-
-.footer2 {
-  background: rgb(49, 49, 49);
-  height: 60px;
-}
-
-.reseaux ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.nouscontacter ul {
-  list-style-type: none;
-}
-
-.footer2 {
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.liensrapide ul {
-  list-style-type: none;
-  text-decoration: none;
-  color: wh;
-}
-
-/* ************************************************ */
-
-/* .enteterea {
-  margin-top: 130px;
-  text-align: center;
-} */
-/* 
-.enteterea h2 {
-  font-size: 4rem;
-  font-style: italic;
-} */
-
-/* Override UGG site */
-#main {
-  width: 100%;
-  padding: 0;
-}
-.content-asset p {
-  margin: 0 auto;
-}
-.breadcrumb {
-  display: none;
-}
-
-/* Helpers */
-/**************************/
-/* .margin-top-10 {
-  padding-top: 10px;
-}
-.margin-bot-10 {
-  padding-bottom: 10px;
-} */
-
-/* Typography */
-/**************************/
-
-#parallax-world-of-ugg {
-  margin-top: 100px;
-}
-
-#parallax-world-of-ugg h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: black;
+.social-menu ul {
+  position: absolute;
+  top: 90%;
+  left: 50%;
   padding: 0;
   margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: -1;
 }
-#parallax-world-of-ugg h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 70px;
-  letter-spacing: 10px;
+
+.social-menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+  font-size: 25px;
+  transition: 0.6s;
+  line-height: 40px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.931);
+}
+
+.social-menu ul li .fab:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(93, 93, 93);
   text-align: center;
-  color: white;
-  font-weight: 400;
-  text-transform: uppercase;
-  z-index: 10;
-  opacity: 0.9;
-}
-#parallax-world-of-ugg h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 0;
-  font-weight: 400;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  color: black;
-}
-#parallax-world-of-ugg p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-.first-character {
-  font-weight: 400;
-  float: left;
-  font-size: 84px;
-  line-height: 64px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  font-family: "Source Sans Pro", sans-serif;
+  transition: 0.4s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 
-.sc {
-  color: #3b8595;
-}
-.ny {
-  color: #3d3c3a;
-}
-.atw {
-  color: #c48660;
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
 }
 
-/* Section - Title */
-/**************************/
-#parallax-world-of-ugg .title {
-  background: white;
-  padding: 60px;
-  margin: 0 auto;
-  text-align: center;
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: rgb(167, 167, 167);
 }
-#parallax-world-of-ugg .title h1 {
-  font-size: 35px;
-  letter-spacing: 8px;
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #0077b5;
 }
-
-/* Section - Block */
-/**************************/
-#parallax-world-of-ugg .block {
-  background: white;
-  padding: 69px;
-  width: 820px;
-  margin: 0 auto;
-  text-align: justify;
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
 }
-#parallax-world-of-ugg .block-gray {
-  background: #f2f2f2;
-}
-#parallax-world-of-ugg .section-overlay-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.7;
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #34465d;
 }
 
-/* Section - Parallax */
-/**************************/
-
-#parallax-world-of-ugg .parallax-one {
-  margin-top: -7px;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  overflow: hidden;
-  position: relative;
-  /* height: 100vh; */
-  width: 100%;
-  background-image: url(./images/BGCAMPUS2.jpg);
-  background-attachment: fixed;
-  background-size: center;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-#parallax-world-of-ugg .parallax-two {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url(./images/BHALLO1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-#parallax-world-of-ugg .parallax-three {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url(./images/BGRESTO2.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-four {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url(./images/BHFUSEE.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-five {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url(./images/BHRUN.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-/* Extras */
-/**************************/
-#parallax-world-of-ugg .line-break {
-  border-bottom: 1px solid black;
-  width: 150px;
-  margin: 0 auto;
-}
-
-/* Media Queries */
-/**************************/
-@media screen and (max-width: 959px) and (min-width: 768px) {
-  #parallax-world-of-ugg .block {
-    padding: 40px;
-    width: 620px;
+@media screen and (min-width: 568px) {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
   }
-}
-@media screen and (max-width: 767px) {
-  #parallax-world-of-ugg .block {
-    padding: 30px;
-    width: 420px;
+  .presentation p {
+    margin-left: 100px;
+    font-size: 1.5rem;
   }
-  #parallax-world-of-ugg h2 {
-    font-size: 30px;
+  .background-skills img {
+    height: 70vh;
+    width: 100%;
   }
-  #parallax-world-of-ugg .block {
-    padding: 30px;
+  .background-work img {
+    height: 70%;
+    width: 100%;
   }
-  #parallax-world-of-ugg .parallax-one,
-  #parallax-world-of-ugg .parallax-two,
-  #parallax-world-of-ugg .parallax-three,
-  #parallax-world-of-ugg .parallax-four,
-  #parallax-world-of-ugg .parallax-five {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .competences-container {
+    width: 70vh;
   }
-}
-@media screen and (max-width: 479px) {
-  #parallax-world-of-ugg .block {
-    padding: 30px 15px;
-    width: 290px;
+  .services {
+    width: 70vh;
+    margin: 0 auto;
   }
 }
 
-.block h3 {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  .presentation p {
+    margin-left: 100px;
+    font-size: 1.5rem;
+  }
+  .background-skills img {
+    height: 70vh;
+    width: 100%;
+  }
+  .background-work img {
+    height: 70%;
+    width: 100%;
+  }
+  .background-contact img {
+    height: 70%;
+    width: 100%;
+  }
+  .competences-container {
+    width: 70vh;
+  }
+  .services {
+    width: 70vh;
+    margin: 0 auto;
+  }
 }
 
-/* ********************************************************** */
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 50px;
+  }
+  .presentation p {
+    margin-left: 200px;
+    font-size: 2rem;
+  }
+  .background-skills img {
+    height: 70vh;
+    width: 100%;
+  }
+  .background-work img {
+    height: 70vh;
+    width: 100%;
+  }
+  .background-contact img {
+    height: 70vh;
+    width: 100%;
+  }
+  .competences-container {
+    width: 60vh;
+  }
+  .services {
+    width: 60vh;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 60px;
+  }
+  .presentation p {
+    margin-left: 400px;
+    font-size: 3rem;
+  }
+  .background-skills img {
+    height: 70vh;
+    width: 100%;
+  }
+  .background-work img {
+    height: 70vh;
+    width: 100%;
+  }
+  .background-contact img {
+    height: 70vh;
+    width: 100%;
+  }
+  .competences-container {
+    width: 60vh;
+  }
+  .services {
+    width: 60vh;
+    margin: 0 auto;
+  }
+}

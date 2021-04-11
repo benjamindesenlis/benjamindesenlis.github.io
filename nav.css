@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: rgb(93, 93, 93);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.nav-btn::after,
+.nav-btn::before,
+.nav-btn span {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 1.5px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(255, 255, 255),
+    transparent
+  );
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-btn::after {
+  top: 1rem;
+}
+
+.nav-btn::before {
+  top: 2rem;
+}
+
+.nav-btn span {
+  top: 1.5rem;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-btn-active::after {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.nav-btn-active::before {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.nav-btn-active span {
+  transform: translateX(100%);
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* ************************************************** */
+  width: 0%;
+  height: 100%;
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: width 1s 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(17, 64, 117);
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.nav-open {
+  transition: width 1s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+}
+
+.nav__list {
+  list-style: none;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.nav__items__fadein {
+  opacity: 0;
+  animation: open-list-items 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    forwards;
+}
+
+.nav__items__fadeout {
+  animation: close-list-items 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    forwards;
+}
+
+@keyframes open-list-items {
+  0% {
+    transform: translateX(50vw) scale(0);
+  }
+  60% {
+    transform: translateX(-20px) scale(1.2) skew(-100deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes close-list-items {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+/* 
+  @media screen and (max-width: 800px) {
+      body{
+          
+      }
+  } */
