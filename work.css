@@ -69,6 +69,11 @@
   font-family: "Bebas Neue", cursive;
 }
 
+.carousel-caption a {
+  text-decoration: none;
+color: white;
+}
+
 /*  */
 .projets2-container {
   margin-top: 50px;
